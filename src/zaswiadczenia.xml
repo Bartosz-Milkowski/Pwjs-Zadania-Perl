@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+
+    <name>COM_ZASWIADCZENIA</name>
+    <creationDate>11 November 2020</creationDate>
+    <!-- pola autora, email, url i wersja wypełniane są podczas budowania projektu -->
+    <author></author>
+    <authorEmail></authorEmail>
+    <authorUrl>https://wi.zut.edu.pl</authorUrl>
+    <copyright>Copyright WI ZUT 2020 All rights reserved.</copyright>
+    <license>MIT</license>
+    <version></version>
+    <!-- Description contents contained in separate language file: see languages folder sys.ini -->
+    <description>COM_ZASWIADCZENIA_DESCRIPTION</description>
+
+    <!-- Runs on install -->
+    <install> 
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <!-- Runs on install -->
+    <uninstall> 
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+        <!-- Runs on update; New since J2.5 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <!--	<scriptfile>script.php</scriptfile>-->
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>zaswiadczenia.php</filename>  
+        <filename>controller.php</filename>
+        <folder>views</folder>      
+        <folder>models</folder> 
+<!--        <folder>icons</folder>-->
+        <folder>controllers</folder> 
+        <folder>css</folder>
+        <folder>js</folder>        
+        <folder>vendor</folder>  
+<!--        <folder>fonts</folder>-->
+    </files>
+
+    <!--
+            <languages folder="site">
+                    <language tag="en-GB">language/en-GB/en-GB.com_zaswiadczenia.ini</language>
+            </languages>
+    -->
+    <!--
+        <media destination="com_zaswiadczenia" folder="media">
+            <filename>index.html</filename>
+            <folder>images</folder>
+        </media>
+    -->
+
+    <administration>
+        <!--<menu img="index.php?option=com_zaswiadczenia">COM_ZASWIADCZENIA_ADMINMENU</menu>-->
+        <menu link='index.php?option=com_zaswiadczenia'>Zaświadczenia Dziekantu</menu>
+
+        <files folder="admin">
+            <filename>index.html</filename>      
+            <filename>config.xml</filename>      
+            <filename>access.xml</filename>      
+            <filename>zaswiadczenia.php</filename>
+            <filename>controller.php</filename>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>language</folder>
+        </files>
+
+        <languages folder="admin">
+            <language tag="pl-PL">language/pl-PL/pl-PL.com_zaswiadczenia.ini</language>
+            <language tag="pl-PL">language/pl-PL/pl-PL.com_zaswiadczenia.sys.ini</language>
+        </languages>
+
+    </administration>
+</extension>
