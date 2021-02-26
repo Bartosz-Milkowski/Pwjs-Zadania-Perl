@@ -1,0 +1,479 @@
+.com_zaswiadczenia {
+    .item {
+        div.pdf_bar {
+            text-align: right;
+        }
+
+        .rejectButton{
+            width: 30%;
+        }
+    }
+    .add1 {
+        label {
+            display: block;
+        }
+        input[type='text'], textarea {
+            width: 300px;
+        }
+    }
+    .list {
+        .link_bar {
+            text-align: right;
+        }
+    }
+
+    // Text
+
+    .text-left{
+        text-align: left;
+    } 
+
+    .text-right{
+        text-align: right;
+    } 
+    
+    .text-bold{
+        font-weight: bold;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    .text-small{
+        font-size: 11px !important;
+    }
+
+    .text-very-small{
+        font-size: 10px !important;
+    }
+
+    // Padding
+
+    .pr5{
+        padding-right: 5px;
+    }
+
+    .pr10{
+        padding-right: 10px;
+    }
+
+    .pr20{
+        padding-right: 20px;
+    }
+
+    .pr30{
+        padding-right: 30px;
+    }
+
+    .pb5{
+        padding-bottom: 5px;
+    }
+
+    .pb10{
+        padding-bottom: 10px;
+    }
+
+    .pb-10{
+        padding-bottom: -10px;
+    }
+
+
+    .pt-50{
+        padding-top: -50px;
+    }
+
+    // Margin
+
+    .ml50{
+        margin-left: 50px;
+    }
+
+    .ml300{
+        margin-left: 300px;
+    }
+
+    .ml380{
+        margin-left: 380px;
+    }
+
+    .ml400{
+        margin-left: 400px;
+    }
+
+    // Width
+
+    .w200{
+        width: 200px;
+    }
+
+    .w240{
+        width: 240px;
+    }
+
+    .w280{
+        width: 280px;
+    }
+
+    .w300{
+        width: 300px;
+    }
+
+    // Border-test
+
+    .border{
+        border: 1px solid black;
+    }
+
+    // Colors
+
+    .color-red{
+        color: red !important;
+    }
+
+    .color-blue{
+        color: blue !important;
+    }
+
+    .color-green{
+        color: green !important;
+    }
+
+    // Button action
+
+    td a{
+        text-decoration: none !important;
+    }
+
+    .button{
+        color: white !important;
+        padding: 1px 8px;
+        font-weight: bold;
+        border-radius: 10%;
+    }
+
+    .back-button{
+        background-color:rgb(200, 245, 142);
+    }
+
+    .edit-button{
+        background-color: lightblue;
+    }
+
+    .reject-button{
+        background-color: red;
+    }
+
+    .accept-button{
+        background-color: lightgreen;
+    }
+
+    tr:nth-of-type(2n){
+        background-color: #dbd7f1;
+    }
+
+    .grid a {
+        text-decoration: none !important;
+    }
+
+    table{
+        width: 100%;
+        margin: 0 auto 0;
+    }
+
+    .dziekanat_menu{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+
+    .promotor_menu, .student_menu{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .dziekanat_menu a, .promotor_menu a, .student_menu a{
+        text-align: center;
+        color: black !important
+    }
+
+    .dziekanat_menu a:hover, .promotor_menu a:hover, .student_menu a:hover{
+        text-decoration: none !important;
+        color: rgb(241, 101, 101) !important;
+    }
+
+    .dziekanat_menu a:nth-of-type(1), .promotor_menu a:nth-of-type(1), .student_menu a:nth-of-type(1){
+        background-color: yellow;
+    }
+
+    .dziekanat_menu a:nth-of-type(2){
+        background-color: lightgray;
+    }
+
+    .dziekanat_menu a:nth-of-type(3), .promotor_menu a:nth-of-type(2) , .student_menu a:nth-of-type(2){
+      background-color: lightgreen;
+    }
+
+    .textarea-90{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .textarea-100{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .reject_reason:hover{
+        cursor: help;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .listStudent{
+        .active{
+            tr td:nth-of-type(1){
+                width: 25%
+            }
+    
+            tr td:nth-of-type(2){
+                width: 30%;
+            }
+    
+            tr td:nth-of-type(3){
+                width: 10%;
+            }
+    
+            tr td:nth-of-type(4){
+                width: 10%;
+            }
+    
+            tr td:nth-of-type(5){
+                width: 10%;
+            }
+        }
+  
+        .ended{
+            tr td:nth-of-type(1){
+                width: 25%
+            }
+    
+            tr td:nth-of-type(2){
+                width: 30%;
+            }
+
+            tr td:nth-of-type(3){
+                width: 30%;
+            }
+        }
+    }
+
+    .listPromotor{
+        .active{
+            tr td:nth-of-type(1){
+                width: 20%
+            }
+    
+            tr td:nth-of-type(2){
+                width: 15%;
+            }
+    
+            tr td:nth-of-type(3){
+                width: 25%;
+            }
+    
+            tr td:nth-of-type(4){
+                width: 8%;
+            }
+
+            tr td:nth-of-type(5){
+                width: 8%
+            }
+    
+            tr td:nth-of-type(6){
+                width: 8%;
+            }
+    
+            tr td:nth-of-type(7){
+                width: 8%;
+            }
+        }
+
+        .ended{
+            tr td:nth-of-type(1){
+                width: 20%
+            }
+    
+            tr td:nth-of-type(2){
+                width: 27%;
+            }
+    
+            tr td:nth-of-type(3){
+                width: 12%;
+            }
+    
+            tr td:nth-of-type(4){
+                width: 12%;
+            }
+
+            tr td:nth-of-type(5){
+                width: 12%
+            }
+    
+            tr td:nth-of-type(6){
+                width: 10%;
+            }
+        }
+    }
+
+    .listDziekanat{
+        .active{
+            tr td:nth-of-type(1){
+                width: 25%
+            }
+    
+            tr td:nth-of-type(2){
+                width: 25%;
+            }
+    
+            tr td:nth-of-type(3){
+                width: 33%;
+            }
+    
+            tr td:nth-of-type(4){
+                width: 10%;
+            }
+        }
+
+        .printed{
+            tr td:nth-of-type(1){
+                width: 25%
+            }
+    
+            tr td:nth-of-type(2){
+                width: 22%;
+            }
+    
+            tr td:nth-of-type(3){
+                width: 27%;
+            }
+
+            tr td:nth-of-type(4){
+                width: 10%;
+            }
+    
+            tr td:nth-of-type(5){
+                width: 10%;
+            }
+        }
+
+        .ended{
+            tr td:nth-of-type(1){
+                width: 25%
+            }
+
+            tr td:nth-of-type(2){
+                width: 22%;
+            }
+    
+            tr td:nth-of-type(3){
+                width: 22%;
+            }
+
+            tr td:nth-of-type(4){
+                width: 15%;
+            }
+
+            tr td:nth-of-type(5){
+                width: 10%;
+            }
+        }
+    }
+
+    .italic{
+       font-style: italic;
+    }
+
+    .underline{
+        text-decoration: underline;
+     }
+
+     .form-title{
+        font-size: 18px;
+        text-align: center;
+     }
+
+     .form-odd{
+        div:nth-of-type(2n+2){
+            margin-right: 20px;
+        }
+
+        form.flex > div:nth-of-type(1){
+            width: 100%;
+        }
+     }
+
+     .form-even{
+        div:nth-of-type(2n+1){
+            margin-right: 20px;
+        }
+     }
+
+     .form{
+        div{
+            width: calc(50% - 10px);
+        }
+
+        .w100{
+            width: 100%;
+        }
+
+        input{
+            height: 25px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0;
+            padding-left: 5px;
+        }
+
+        input[type=radio]{
+            width: auto;
+        }
+
+        input[type=submit]{
+            width: 30%;
+            margin: 0 auto 0;
+        }
+
+        hr{
+            width: 100%;
+            margin: 5px auto 10px;
+            border:none;
+            border-top: 1px solid black;
+         }
+
+         textarea{
+             width: 100%;
+         }
+
+         margin: 0 auto 0;
+         width: 100%;
+     }
+
+     textarea{
+        padding: 5px !important;
+        box-sizing: border-box;
+     }
+}
+
+.pdf{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px !important;
+}
